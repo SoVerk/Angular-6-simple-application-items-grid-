@@ -1,0 +1,17 @@
+<div>
+  <p *ngIf="Remove">Remove items</p>
+  <div *ngFor="let row of Items">
+    <div class="row">
+      <p>Тип товара: {{row.group.name}} | ID Товара: {{row.group.id}} </p>
+      <div class="item" [class.selected]="isSelect(item)" *ngFor="let item of row.skus">
+        <app-item [Name]="item">
+        </app-item>
+        <button class="btn"(click)="onSelect(item)">Выбрать</button>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <button class="bucket-btn" (click)="toBucket()">В Корзину</button>
+</div>
+
+

@@ -1,0 +1,39 @@
+div .item{
+  width: 30%;
+  min-width: 250px;
+  height: 250px;
+  margin:  1.3%;
+  float: left;
+  justify-content: center;
+  border: 2px solid slateblue;
+  text-align: center;
+  transition: 0.4s;
+  font-size: 100%;
+  border-radius: 10px;
+}
+
+.row p {
+  background: rgba(31, 196, 205, 0.57);
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.selected {
+  background: rgba(127, 255, 0, 0.27);
+}
+.btn {
+  width: 100px;
+  height: 20px;
+  background: #66ff9d;
+  border-radius: 5px;
+
+}
+.clear {
+  clear: both;
+}
+.bucket-btn {
+  margin: 0 33%;
+  width: 33%;
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(255, 165, 0, 0.5);
+}
